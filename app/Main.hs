@@ -6,6 +6,7 @@ import qualified Data.String as BLU
 import Data.Text
 import Database.Redis
 import EnvReading
+import FactorialHandler
 import HelloHandler
 import Logging
 import RedisHandler
@@ -15,6 +16,7 @@ import Web.Firefly
 getRoutes :: Connection -> Routes
 getRoutes redisConnection =
   [ ("/", helloHandler),
+    ("/factorial.*", factorialHandler),
     ("/redis.*", redisHandler redisConnection),
     ("/postgres", helloHandler)
   ]

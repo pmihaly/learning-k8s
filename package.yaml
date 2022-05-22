@@ -1,5 +1,5 @@
 name:                learning-k8s
-version:             0.1.0.0
+version:             1.0.0
 github:              "pmihaly/learning-k8s"
 license:             GPL-3
 author:              "Papp Mihály"
