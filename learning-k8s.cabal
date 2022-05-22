@@ -27,6 +27,7 @@ library
       EnvReading
       Logging
       Routing
+      FactorialHandler
       HelloHandler
       RedisHandler
   other-modules:
