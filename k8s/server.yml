@@ -38,6 +38,13 @@ spec:
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
+          env:
+            - name: PORT
+              value: "3000"
+            - name: REDIS_HOST
+              value: redis-cluster-ip-service
+            - name: REDIS_PORT
+              value: "6379"
       imagePullSecrets:
       - name: dockerconfigjson
 

@@ -26,9 +26,12 @@ dependencies:
 - wai == 3.2.3
 - mtl == 2.2.2
 - time == 1.9.3
+- hedis == 0.15.1
 
 library:
-  source-dirs: src
+  source-dirs: 
+    - src
+    - src/handlers
 
 executables:
   learning-k8s-exe:

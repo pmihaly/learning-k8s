@@ -18,6 +18,13 @@ packages:
     hackage: QuickCheck-2.14.2@sha256:4ce29211223d5e6620ebceba34a3ca9ccf1c10c0cf387d48aea45599222ee5aa,7736
   original:
     hackage: QuickCheck-2.14.2
+- completed:
+    pantry-tree:
+      sha256: d01cd5f335fcceb1ee537d0a8b8586332a65de2058ff421171593d6c5dce294f
+      size: 1776
+    hackage: hedis-0.15.1@sha256:64c8c26071222e6c8b25b59bfabd0fffde465cb65714ebc0351f991c809ad7ee,6312
+  original:
+    hackage: hedis-0.15.1
 snapshots:
 - completed:
     sha256: 57d4ce67cc097fea2058446927987bc1f7408890e3a6df0da74e5e318f051c20

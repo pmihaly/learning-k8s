@@ -25,16 +25,19 @@ source-repository head
 library
   exposed-modules:
       EnvReading
-      HelloHandler
       Logging
       Routing
+      HelloHandler
+      RedisHandler
   other-modules:
       Paths_learning_k8s
   hs-source-dirs:
       src
+      src/handlers
   build-depends:
       base >=4.7 && <5
     , firefly ==0.2.1.0
+    , hedis ==0.15.1
     , mtl ==2.2.2
     , text ==1.2.5.0
     , time ==1.9.3
@@ -51,6 +54,7 @@ executable learning-k8s-exe
   build-depends:
       base >=4.7 && <5
     , firefly ==0.2.1.0
+    , hedis ==0.15.1
     , learning-k8s
     , mtl ==2.2.2
     , text ==1.2.5.0
@@ -69,6 +73,7 @@ test-suite learning-k8s-test
   build-depends:
       base >=4.7 && <5
     , firefly ==0.2.1.0
+    , hedis ==0.15.1
     , learning-k8s
     , mtl ==2.2.2
     , text ==1.2.5.0

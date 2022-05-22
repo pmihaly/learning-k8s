@@ -32,7 +32,4 @@ RUN apt update && apt install libgmp-dev libpcre3 -y && rm -rf /var/lib/apt/list
 
 COPY --from=build /opt/build/bin .
 
-ENV PORT 3000
-EXPOSE 3000
-
 CMD ["/opt/app/learning-k8s-exe"]
