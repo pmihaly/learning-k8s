@@ -25,11 +25,6 @@ spec:
               value: redis-svc
             - name: REDIS_PORT
               value: "6379"
-            - name: ENVIRONMENT
-              value: "PROD"
-          resources:
-            requests:
-              cpu: "250m"
       imagePullSecrets:
       - name: dockerconfigjson
 

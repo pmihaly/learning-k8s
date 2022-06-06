@@ -1,0 +1,10 @@
+bases:
+  - ../../base
+
+resources:
+  - 0002-add-hpa-to-server.yaml
+  - https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.1/components.yaml # metrics server for HPA
+
+patches:
+  - 0001-set-environment-variable.yaml
+  - 0003-add-resource-limits-to-server.yaml

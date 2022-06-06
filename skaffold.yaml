@@ -15,6 +15,32 @@ build:
     docker:
       dockerfile: Dockerfile
 deploy:
-  kubectl:
-    manifests:
-    - k8s
+  kustomize:
+    paths:
+    - k8s/environments/dev
+profiles:
+- name: base
+  deploy:
+    kustomize:
+      paths:
+      - k8s/base
+- name: postgres
+  deploy:
+    kustomize:
+      paths:
+      - k8s/base/postgres
+- name: redis
+  deploy:
+    kustomize:
+      paths:
+      - k8s/base/redis
+- name: server
+  deploy:
+    kustomize:
+      paths:
+      - k8s/base/server
+- name: prod
+  deploy:
+    kustomize:
+      paths:
+      - k8s/environments/prod

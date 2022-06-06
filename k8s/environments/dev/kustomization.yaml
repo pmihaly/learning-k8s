@@ -1,0 +1,6 @@
+bases:
+  - ../../base
+
+patches:
+  - 0001-set-environment-variable.yaml
+

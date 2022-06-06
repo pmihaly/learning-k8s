@@ -1,0 +1,3 @@
+resources:
+  - server.deploy.yaml
+  - server.svc.yaml
