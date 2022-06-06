@@ -25,6 +25,8 @@ spec:
               value: redis-cluster-ip-service
             - name: REDIS_PORT
               value: "6379"
+            - name: ENVIRONMENT
+              value: "PROD"
           resources:
             requests:
               cpu: "250m"
