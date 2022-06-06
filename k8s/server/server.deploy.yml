@@ -22,7 +22,7 @@ spec:
             - name: PORT
               value: "3000"
             - name: REDIS_HOST
-              value: redis-cluster-ip-service
+              value: redis-svc
             - name: REDIS_PORT
               value: "6379"
             - name: ENVIRONMENT

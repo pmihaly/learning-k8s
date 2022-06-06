@@ -14,6 +14,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: server-cluster-ip-service
+                name: server-svc
                 port:
                   number: 3000
