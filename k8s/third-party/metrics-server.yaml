@@ -1,3 +1,7 @@
+# Metrics server is needed for horizontal pod autoscaler to get cpu/memory metrics to scale by
+# 
+# File downloaded from github `components.yml`, third party app to be managed with helm/kustomize
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:
